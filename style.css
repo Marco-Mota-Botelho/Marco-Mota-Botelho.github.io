@@ -1,9 +1,19 @@
-.imgPattern{
-    width: 15px;
-    height: 15px;
-    padding-right: 2px;
+.imgPattern {
+  width: 15px;
+  height: 15px;
+  padding-right: 2px;
 }
 
-html{
-    background-color: teal;
+html {
+  background-color: teal;
+  font-family: sans-serif;
+}
+
+.title {
+  font-weight: 600;
+  text-align: center;
+}
+
+div {
+  width: 300px;
 }
