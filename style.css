@@ -1,45 +1,111 @@
-.imgPattern {
-  width: 15px;
-  height: 15px;
-  padding-right: 2px;
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+@import 'colors.css';
+
+
+body{
+  margin: 0;
+  background-color: var(--neutral-color);
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
 }
 
-html {
-  background-color: rgb(28, 151, 151);
-  font-family: sans-serif;
+.container{
+  width: 80%;
+  padding: 0;
+  margin:0 auto;
 }
 
-.title {
-  font-weight: 600;
-  font-size: 1.5em;
-  text-align: center;
+/* Navbar begins here */
+header{
+  background-color: var(--secondary-color);
+  position: fixed;
+  width: 100%;
+}
+header::after{
+  content: '';
+  display: table;
+  clear:both;
 }
 
-div {
-  width: 300px;
+.logo {
+  float: left;
+  border: 1px solid black;
+  /* padding: 5px 10px;
+  font-size: 1.3em; */
 }
 
-#profile{
-  border-radius: 30%;
+nav{
+  float: right;
 }
 
-.button{
-  width: 100px;
-  background-color: rgb(223, 150, 14);
-  padding: 5px;
-  color: rgb(66, 7, 66);
-  border-radius: 20%;
-  font-size: 16px;
-  text-align: center;
-  text-decoration: double;
+nav ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li{
   display: inline-block;
-  border: none;
+  margin-left: 70px;
+  padding-top: 23px;
   
-}
-.button:hover{
-  background-color: rgb(175, 119, 16);
+  
+  position:relative
 }
 
-li{
-  padding-top: 10px;
+nav a{
+  color: var(--link-color);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
 }
+
+nav a:hover{
+  color: hsl(0, 0%, 0%);
+}
+
+nav a::before{
+  content: '';
+  display: block;
+  height: 5px;
+  width: 0%;
+  background-color: var(--link-color);
+
+  position: absolute;
+  top: 0;
+
+  transition: all ease-in-out 250ms;
+
+}
+
+nav a:hover::before{
+  width: 100%;
+
+}
+
+/* Navbar ends  */
+
+main{
+  color: var(--secondary-color);
+}
+
+main a{
+  color: var(--link-color);
+}
+
+main a:hover{
+  color: var(--link-color-hover);
+}
+
+/* main img treatment  */
+
+#profile {
+  border-radius: 50px;
+  margin-top: 5%;
+}
+
+.imgPattern{
+  height: 15px;
+  width: 15px;
+}
+
