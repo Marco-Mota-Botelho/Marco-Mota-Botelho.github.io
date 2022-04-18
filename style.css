@@ -7,7 +7,7 @@ body{
   background-color: var(--neutral-color);
   font-family: 'Work Sans', sans-serif;
   color: var(--secondary-color);
-  font-weight: 400;
+  font-weight: var(--font-wght-normal);
 }
 
 .container{
@@ -37,6 +37,8 @@ header::after{
   float: left;
   border: 1px solid black;
   padding: 3px 10px;
+  font-weight: var(--font-wght-bold);
+  color: var(--link-color-hover);
   /* font-size: 1.3em; */
 }
 
