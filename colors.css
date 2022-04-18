@@ -4,4 +4,5 @@
     --neutral-color: hsl(0, 0%, 13%);
     --link-color: hsl(0, 0%, 27%);
     --link-color-hover: hsl(0,0%,0%);
+    --clr-neon: hsl(160, 100%, 54%);
   }
