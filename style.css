@@ -36,8 +36,8 @@ header::after{
 .logo {
   float: left;
   border: 1px solid black;
-  /* padding: 5px 10px;
-  font-size: 1.3em; */
+  padding: 3px 10px;
+  /* font-size: 1.3em; */
 }
 
 nav{
