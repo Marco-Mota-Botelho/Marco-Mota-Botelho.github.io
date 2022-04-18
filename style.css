@@ -174,7 +174,12 @@ main a:hover{
   text-shadow: none;
 }
 
-.neon-btn:hover::after{
+.neon-btn:hover::after,
+.neon-btn:focus::after{
   opacity: 1;
 }
 
+.neon-btn:hover::before,
+.neon-btn:focus::before{
+  opacity: 1;
+}
