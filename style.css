@@ -26,6 +26,7 @@ header{
   color: var(--link-color);
   position: fixed;
   width: 100%;
+  z-index: 1;
 }
 header::after{
   content: '';
@@ -39,6 +40,7 @@ header::after{
   padding: 3px 10px;
   font-weight: var(--font-wght-bold);
   color: var(--link-color-hover);
+  transform: translateY(50%);
   /* font-size: 1.3em; */
 }
 
@@ -109,6 +111,10 @@ main a:hover{
   width: 15px;
 }
 
+.gallery-img{
+  width: 100px;
+}
+
 
 /* btn treatment  */
 
@@ -118,20 +124,16 @@ main a:hover{
   cursor: pointer;
   text-decoration: none;
   margin-top: 50px;
-  margin-left: 50%;
-
+  margin-left: 2.5em;
   color: var(--clr-neon);
   border: var(--clr-neon) 0.125em solid;
   border-radius: .25em;
   padding: 0.25em 1em;
-
-
   text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.5),
   0 0 .25em currentColor;
 
   box-shadow: 0 0 1em 0 var(--clr-neon),
   inset 0 0 1em 0 var(--clr-neon);
-
   position: relative;
 
   transition: background-color 100ms linear;
@@ -184,4 +186,53 @@ main a:hover{
 .neon-btn:hover::before,
 .neon-btn:focus::before{
   opacity: 1;
+}
+
+/* Acorddion  */
+
+.techs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.accordion{
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  max-height: 530px;
+  
+}
+
+.accordion-item{
+  min-width: 180px;
+  max-width: 180px;
+  border-radius: 10%;
+  box-shadow: 0 0 1em .125em var(--clr-neon);
+  margin-top: 10px;
+  margin-right: 10px;
+  background-color: var(--neutral-color);
+  color: var(--link-color);
+}
+
+.accordion-button:not(.selected){
+  border-radius: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: var(--link-color);
+  min-height: 200px;
+}
+
+.accordion-button:not(.collapsed)::after {
+justify-content: center;
+background-image: none;
+}
+
+.accordion-button::after {
+  display: none;
+}
+
+.tech-title{
+  text-align: center;
 }
