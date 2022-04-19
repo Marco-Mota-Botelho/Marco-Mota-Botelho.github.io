@@ -5,6 +5,6 @@
     --link-color: hsl(0, 0%, 27%);
     --link-color-hover: hsl(0,0%,0%);
     --clr-neon: hsl(282, 100%, 54%);
-    --font-wght-normal: 400;
-    --font-wght-bold: 600;
+    --font-normal: 400;
+    --font-bold: 600;
   }
