@@ -7,8 +7,17 @@ import {
   FaGitAlt,
   FaGithubSquare,
   FaLink,
+  FaNodeJs,
 } from "react-icons/fa";
-import { SiJavascript, SiStyledcomponents, SiRedux } from "react-icons/si";
+import {
+  SiJavascript,
+  SiStyledcomponents,
+  SiRedux,
+  SiJest,
+  SiTypescript,
+  SiMysql,
+  SiMongodb,
+} from "react-icons/si";
 
 // Projects Images (add your images to the images directory and import below)
 import Logo from "./images/logo.svg";
@@ -24,7 +33,7 @@ export { HeroDark as Dark };
  **************************************************************
   Add your GitHub username (string - "YourUsername") below.
 */
-export const githubUsername = "Your GitHub username here";
+export const githubUsername = "Marco-Mota-Botelho";
 
 // Blog link icon (imported above)
 export const Blog = <FaLink />;
@@ -86,6 +95,31 @@ export const skillData = [
     skill: <FaGithubSquare className="display-4" />,
     name: "GitHub",
   },
+  {
+    id: 10,
+    skill: <FaNodeJs className="display-4" />,
+    name: "Node"
+  },
+  {
+    id: 11,
+    skill: <SiJest className="display-4" />,
+    name: "Jest"
+  },
+  {
+    id: 12,
+    skill: <SiTypescript className="display-4" />,
+    name: "TypeScript"
+  },
+  {
+    id: 13,
+    skill: <SiMysql className="display-4" />,
+    name: "MySQL"
+  },
+  {
+    id: 13,
+    skill: <SiMongodb className="display-4" />,
+    name: "MongoDB"
+  },
 ];
 
 // Resume link (string - "https://YourResumeUrl") - I am using CloudFront to share my resume (https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html)
@@ -95,7 +129,7 @@ export const resume = null;
  ************************************************************** 
   List the repo names (string - "your-repo-name") you want to include (they will be sorted alphabetically). If empty, only the first 3 will be included.
 */
-export const filteredProjects = ["example-1", "example-2", "example-3"];
+export const filteredProjects = ["trybe_futebol_clube", "Trybers_and_Dragons_OOP", "example-3"];
 
 // Replace the defualt GitHub image for matching repos below (images imported above - lines 13-14)
 export const projectCardImages = [
